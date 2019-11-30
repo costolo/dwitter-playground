@@ -10,11 +10,11 @@
 * x is a 2D context for the canvas
 * t is the elapsed time in seconds
 
-This repo is for creating animations with the same syntax or experiencing and learning from the animations from other Dwitterers on the own machine.
+This repo is for creating animations with the same syntax or running and learning from the animations from other Dwitterers on your own machine.
 
 
 ## Starting
-All you have to do is downloading or cloning this repo and opening the index.html file in your editor of choice. You can start right away by writing the function.
+Just clone the repo and run `npm install`, you can serve the app via `npm start`. Once you're up and running, edit the funciton below to start creating your own dweets.
 
 ```js
 const playground = document.querySelector("#playground");
@@ -43,7 +43,7 @@ const dwitter = new Dwitter(playground, {
 
     u: (c, x, t, S, C, T, R) => {
 
-        /* Copypasted from Dwitter */
+        /* Copied from Dwitter */
         c.width=1920; /* clear the canvas */
 	for(i=0;i<9;i++)
         x.fillRect(400+i*100+S(t)*300, 400, 50, 200) /* draw 50x200 rects */
